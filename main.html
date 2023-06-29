@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+
+<body id="main_window">
+    <div id="user_log" class="window">
+        <div class="user_log_element">
+            <p class="input_logs">username </p>
+            <input type="text"  autocomplete="off" name="text" placeholder="Usuario" id="username_input" class="input_logs input">
+        </div>
+        <div class="user_log_element">
+            <p class="input_logs">password </p>
+            <input  type="text" autocomplete="off" name="text" placeholder="Contraseña" id="password_input" class="input_logs input">
+        </div>
+        <button id="log_in_button" class="user_log_element" onclick="defineClient()"><span>Log In</span></button>
+    </div>
+    <div id="main_menu">
+        <p id="main_menu_text"></p>
+        <div class='window' id="main_menu_buttons">
+            <button class="main_menu_button" onclick="addSaldoWindow(0)"><span>Consultar saldo</span></button>
+            <button class="main_menu_button" onclick="addSaldoWindow(2)"><span>Retirar Saldo</span></button>
+            <button class="main_menu_button" onclick="addSaldoWindow(1)"><span>Añadir Saldo</span></button>
+            <button class="main_menu_button" onclick="addSaldoWindow(3)"><span>Transferencias</span></button>
+            <button class="main_menu_button" id="boton_cerrar_sesion"><span>Cerrar sesion</span></button>
+        </div>
+    </div>
+
+    <script src="./code.js"></script>
+</body>
+
+</html>
